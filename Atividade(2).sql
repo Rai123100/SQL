@@ -81,5 +81,21 @@
 
 --Atividade 8
 
-SELECT ProductKey, ProductName, UnitPrice
-FROM DimProduct
+--SELECT ProductKey, ProductName, UnitPrice
+--FROM DIMPRODUCT
+--WHERE ProductDescription LIKE '%LCD%'
+
+
+--Atividade 9
+
+--SELECT *
+--FROM DimProduct
+--WHERE ColorName IN ('Green', 'Orange', 'Black', 'Silver', 'Pink') AND BrandName IN ('Contoso', 'Litware', 'Fabrikam')
+
+
+--Atividade 10
+
+--SELECT *
+--FROM DimProduct
+--WHERE BrandName = 'Contoso' AND ColorName = 'Silver' AND UnitPrice BETWEEN 10 AND 30
+--ORDER BY UnitPrice DESC
