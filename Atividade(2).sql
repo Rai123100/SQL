@@ -11,6 +11,10 @@
 --FROM DimProduct
 --ORDER BY UnitPrice DESC, Weight DESC, ProductLabel ASC
 
+--SELECT TOP (10) *
+--FROM DimProduct
+--ORDER BY UnitPrice DESC, Weight DESC, AvailableForSaleDate ASC
+
 
 --Atividade 3
 
@@ -20,7 +24,7 @@
 --	ProductName AS 'Nome do Produto',
 --	Weight AS Peso
 --FROM DimProduct
---WHERE Weight>100
+--WHERE Weight > 100
 --ORDER BY Weight DESC
 
 
@@ -31,7 +35,7 @@
 --	OpenDate AS 'Data da Abertura',
 --	EmployeeCount AS 'Contagem de funcionários'
 --FROM DimStore
---WHERE CloseDate IS NULL
+--WHERE StoreType = 'Store' AND Status = 'On'
 
 
 --Atividade 5
@@ -48,13 +52,13 @@
 
 --SELECT *
 --FROM DimStore
---WHERE Status = 'ON'
+--WHERE Status = 'Off'
 
 --ETAPA b)
 
 --SELECT *
 --FROM DimStore
---WHERE CloseDate IS NULL
+--WHERE CloseDate IS NOT NULL
 
 
 
