@@ -98,7 +98,7 @@ WHERE
 
 --Atividade 8
 
-SELECT
+SELECT DISTINCT
  BrandName,
  ChannelName
 FROM
@@ -114,23 +114,35 @@ ON
 WHERE
  BrandName IN ('Contoso', 'Fabrikam', 'Litware');
 
+--Versão Correta
+SELECT
+ DISTINCT
+  DimProduct.BrandName,
+  DimChannel.ChannelName
+FROM
+ DimProduct 
+CROSS JOIN
+ DimChannel
+WHERE
+ BrandName IN ('Contoso', 'Fabrikam', 'Litware')
+
 --Atividade 9
 
-SELECT
+SELECT TOP (1000)
  OnlineSalesKey,
  DateKey,
  PromotionName,
  SalesAmount
 FROM
- DimPromotion
-INNER JOIN
  FactOnlineSales
+INNER JOIN
+ DimPromotion
 ON
  FactOnlineSales.PromotionKey = DimPromotion.PromotionKey
 WHERE
- PromotionName = 'No Discount'
+ PromotionName <> 'No Discount'
 ORDER BY
- DateKey 
+ DateKey ASC
 
 --Atividade 10
 
@@ -151,4 +163,4 @@ INNER JOIN
 ON
  FactSales.ProductKey = DimProduct.ProductKey
 ORDER BY
- SalesAmount
+ SalesAmount DESC
