@@ -10,6 +10,8 @@ INNER JOIN
 ON
  DimProduct.ProductSubcategoryKey = DimProductSubcategory.ProductSubcategoryKey
 
+--------------------------------------------------------------
+
 --Atividade 2
 
 SELECT
@@ -20,6 +22,8 @@ LEFT JOIN
  DimProductCategory
 ON
  DimProductSubcategory.ProductCategoryKey = DimProductCategory.ProductCategoryKey
+
+--------------------------------------------------------------
 
 --Atividade 3
 
@@ -35,6 +39,8 @@ LEFT JOIN
  DimGeography
 ON
  DimStore.GeographyKey = DimGeography.GeographyKey
+
+--------------------------------------------------------------
 
 --Atividade 4
 
@@ -55,6 +61,8 @@ LEFT JOIN
 ON
  DimProductCategory.ProductCategoryKey = DimProductSubcategory.ProductCategoryKey
 
+--------------------------------------------------------------
+
 --Atividade 5
 
 SELECT
@@ -68,6 +76,8 @@ INNER JOIN
  DimAccount
 ON
  FactStrategyPlan.AccountKey = DimAccount.AccountKey
+
+--------------------------------------------------------------
 
 --Atividade 6
 
@@ -83,6 +93,8 @@ INNER JOIN
 ON
  FactStrategyPlan.ScenarioKey = DimScenario.ScenarioKey
 
+--------------------------------------------------------------
+
 --Atividade 7
 
 SELECT
@@ -95,6 +107,8 @@ ON
  DimProduct.ProductSubcategoryKey = DimProductSubcategory.ProductSubcategoryKey
 WHERE
  DimProduct.ProductKey IS NULL
+
+--------------------------------------------------------------
 
 --Atividade 8
 
@@ -126,6 +140,8 @@ CROSS JOIN
 WHERE
  BrandName IN ('Contoso', 'Fabrikam', 'Litware')
 
+--------------------------------------------------------------
+
 --Atividade 9
 
 SELECT TOP (1000)
@@ -143,6 +159,8 @@ WHERE
  PromotionName <> 'No Discount'
 ORDER BY
  DateKey ASC
+
+--------------------------------------------------------------
 
 --Atividade 10
 

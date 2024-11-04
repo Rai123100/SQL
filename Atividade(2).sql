@@ -7,6 +7,7 @@ FROM
 ORDER BY
  SalesAmount DESC
 
+--------------------------------------------------------------
 
 --Atividade 2
 
@@ -28,6 +29,7 @@ ORDER BY
  Weight DESC,
  AvailableForSaleDate ASC
 
+--------------------------------------------------------------
 
 --Atividade 3
 
@@ -43,6 +45,7 @@ WHERE
 ORDER BY
  Weight DESC
 
+--------------------------------------------------------------
 
 --Atividade 4
 
@@ -56,6 +59,7 @@ WHERE
  StoreType = 'Store' AND
  Status = 'On'
 
+--------------------------------------------------------------
 
 --Atividade 5
 
@@ -67,6 +71,7 @@ WHERE
  BrandName = 'Litware' AND
  AvailableForSaleDate = '15/03/2009'
 
+--------------------------------------------------------------
 
 --Atividade 6
 
@@ -88,7 +93,7 @@ FROM
 WHERE
  CloseDate IS NOT NULL
 
-
+--------------------------------------------------------------
 
 --Atividade 7
 
@@ -119,6 +124,7 @@ FROM
 WHERE
  EmployeeCount > 50
 
+--------------------------------------------------------------
 
 --Atividade 8
 
@@ -131,6 +137,7 @@ FROM
 WHERE
  ProductDescription LIKE '%LCD%'
 
+--------------------------------------------------------------
 
 --Atividade 9
 
@@ -142,6 +149,7 @@ WHERE
  ColorName IN ('Green', 'Orange', 'Black', 'Silver', 'Pink') AND
  BrandName IN ('Contoso', 'Litware', 'Fabrikam')
 
+--------------------------------------------------------------
 
 --Atividade 10
 
